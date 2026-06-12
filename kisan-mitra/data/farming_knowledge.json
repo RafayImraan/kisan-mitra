@@ -1,0 +1,136 @@
+{
+  "diseases": [
+    {
+      "name": "Blast (Jhulsa Rog)",
+      "crops": ["wheat", "rice", "gehu", "chawal"],
+      "symptoms": ["brown spots on leaves", "yellow patches", "patte par daag", "leaves turning yellow"],
+      "organic_remedy": "Spray neem oil (5ml per litre water) every 7 days. Use Trichoderma viride as soil treatment. Remove infected leaves immediately.",
+      "hindi_remedy": "Neem tel ka ghol (5ml per litre paani) 7 din mein ek baar spray karein. Trichoderma viride mitti mein milaein. Sankramit patte turant hatayein."
+    },
+    {
+      "name": "Powdery Mildew (Safed Churn Rog)",
+      "crops": ["vegetables", "sabzi", "cucumbers", "khira", "pumpkin", "kaddu"],
+      "symptoms": ["white powder on leaves", "safed powder", "patte par safed daag", "leaves curl up"],
+      "organic_remedy": "Mix 1 tbsp baking soda + 1 tsp neem oil in 1 litre water. Spray weekly. Use wood ash on affected areas.",
+      "hindi_remedy": "1 chamach baking soda + 1 chamach neem tel ek litre paani mein milakar weekly spray karein. Prabhavit jagah par lakdi ki raakh chirakein."
+    },
+    {
+      "name": "Root Rot (Jadon Sarana)",
+      "crops": ["tomato", "tamatar", "brinjal", "baingan", "chilli", "mirch"],
+      "symptoms": ["wilting plants", "yellow leaves", "paudha murjhana", "roots turning black", "jaad kala ho jana"],
+      "organic_remedy": "Improve drainage. Apply Trichoderma harzianum to soil. Use curd water (diluted whey) as soil drench. Avoid overwatering.",
+      "hindi_remedy": "Pani nikasi theek karein. Trichoderma harzianum mitti mein milaein. Chaach ka paani (diluted) mitti mein dalein. Zyada paani dene se bachein."
+    },
+    {
+      "name": "Aphids (Maahu)",
+      "crops": ["mustard", "sarson", "vegetables", "sabzi", "pulses", "dal"],
+      "symptoms": ["small insects on leaves", "sticky leaves", "chote keede", "patte chipchipe", "yellowing"],
+      "organic_remedy": "Spray diluted neem oil (2%). Use garlic-chilli spray. Introduce ladybugs naturally. Use yellow sticky traps.",
+      "hindi_remedy": "Neem tel (2%) ka spray karein. Lehsun-mirch ka ghol spray karein. Peele chipchipe trap lagaein."
+    },
+    {
+      "name": "Leaf Borer (Patton ka Keeda)",
+      "crops": ["rice", "chawal", "sugarcane", "ganna", "maize", "makka"],
+      "symptoms": ["holes in leaves", "patte mein chhed", "dead heart", "stem damage", "tane ko nuksan"],
+      "organic_remedy": "Use Bacillus thuringiensis (Bt) spray. Apply neem seed kernel extract (NSKE 5%). Light traps at night. Intercrop with repellent plants.",
+      "hindi_remedy": "Bt spray ka istemal karein. Neem beej ka sat (NSKE 5%) spray karein. Raat ko light trap lagaein."
+    },
+    {
+      "name": "Fruit Borer (Fal ka Keeda)",
+      "crops": ["tomato", "tamatar", "chilli", "mirch", "brinjal", "baingan"],
+      "symptoms": ["holes in fruits", "falon mein chhed", "rotting fruits", "fal sadna"],
+      "organic_remedy": "Spray NSKE (Neem Seed Kernel Extract) 5%. Use pheromone traps. Remove and destroy infected fruits. Spray Spinosad (organic).",
+      "hindi_remedy": "NSKE 5% spray karein. Pheromone trap lagaein. Sankramit fal turant hatakr nasht karein."
+    }
+  ],
+  "crops": {
+    "wheat": {
+      "hindi": "Gehu",
+      "sowing_season": "October-November (Rabi)",
+      "harvest": "March-April",
+      "companion_plants": ["mustard", "chickpea"],
+      "natural_fertilizer": "Vermicompost 2-3 tonnes/acre, Jeevamrit spray every 15 days",
+      "water_need": "Medium - 4-5 irrigations",
+      "tip": "Use desi varieties like Sharbati or Kathia for natural farming"
+    },
+    "rice": {
+      "hindi": "Chawal/Dhan",
+      "sowing_season": "June-July (Kharif)",
+      "harvest": "October-November",
+      "companion_plants": ["azolla", "dhaincha"],
+      "natural_fertilizer": "Green manure (Dhaincha), Jeevamrit, FYM 4-5 tonnes/acre",
+      "water_need": "High - maintain 2-3 inch water",
+      "tip": "SRI method with organic inputs saves water and increases yield"
+    },
+    "tomato": {
+      "hindi": "Tamatar",
+      "sowing_season": "June-July or October-November",
+      "harvest": "90-120 days after transplanting",
+      "companion_plants": ["basil", "marigold", "garlic"],
+      "natural_fertilizer": "Panchagavya spray, Vermicompost, Bone meal",
+      "water_need": "Regular - drip irrigation preferred",
+      "tip": "Marigold intercrop repels nematodes naturally"
+    },
+    "mustard": {
+      "hindi": "Sarson",
+      "sowing_season": "October-November",
+      "harvest": "February-March",
+      "companion_plants": ["wheat", "chickpea"],
+      "natural_fertilizer": "FYM 3-4 tonnes/acre, Jeevamrit",
+      "water_need": "Low to medium - 2-3 irrigations",
+      "tip": "Attracts aphid predators, good trap crop"
+    }
+  },
+  "subsidies": [
+    {
+      "name": "PM-KISAN",
+      "description": "Rs 6000 per year direct income support to farmer families",
+      "hindi": "Kisan parivaron ko har saal 6000 rupye seedha bank mein",
+      "eligibility": "All small and marginal farmers",
+      "apply": "pmkisan.gov.in or nearest CSC center"
+    },
+    {
+      "name": "Paramparagat Krishi Vikas Yojana (PKVY)",
+      "description": "Rs 50,000 per hectare for 3 years for organic farming transition",
+      "hindi": "Jaivik kheti ke liye 3 saal mein 50,000 rupye per hectare",
+      "eligibility": "Farmers transitioning to organic/natural farming",
+      "apply": "State Agriculture Department or online portal"
+    },
+    {
+      "name": "PM Fasal Bima Yojana",
+      "description": "Crop insurance with very low premium (1.5-2%) for Rabi crops",
+      "hindi": "Fasal bima — Rabi fasal ke liye sirf 1.5-2% premium",
+      "eligibility": "All farmers growing notified crops",
+      "apply": "Nearest bank or insurance company before sowing"
+    },
+    {
+      "name": "Kisan Credit Card (KCC)",
+      "description": "Short term credit up to Rs 3 lakh at 4% interest rate",
+      "hindi": "3 lakh tak ka karj sirf 4% byaj par",
+      "eligibility": "All farmers, tenant farmers, sharecroppers",
+      "apply": "Any nationalized bank with land papers"
+    },
+    {
+      "name": "Soil Health Card Scheme",
+      "description": "Free soil testing and nutrient management recommendations",
+      "hindi": "Muft mitti janch aur poshan prabandhan salah",
+      "eligibility": "All farmers",
+      "apply": "Nearest Krishi Vigyan Kendra or Agriculture Department"
+    }
+  ],
+  "jeevamrit_recipe": {
+    "name": "Jeevamrit",
+    "description": "Natural liquid fertilizer and biostimulant",
+    "ingredients": [
+      "200 litre water",
+      "10 kg fresh desi cow dung (gaay ka gobar)",
+      "10 litre desi cow urine (gomutra)",
+      "2 kg jaggery (gud)",
+      "2 kg pulse flour (besan)",
+      "Handful of soil from banyan tree base"
+    ],
+    "method": "Mix all in a barrel, stir twice daily, ready in 48 hours. Use within 7 days.",
+    "hindi_method": "Sab ek barrel mein milaein, din mein 2 baar hilaein, 48 ghante mein taiyar. 7 din mein use karein.",
+    "usage": "Dilute 200 litres with 200 litres water, spray or irrigate per acre"
+  }
+}

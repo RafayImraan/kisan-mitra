@@ -1,0 +1,167 @@
+{
+  "weather": {
+    "punjab": {
+      "region": "Punjab",
+      "hindi": "Punjab",
+      "current": {
+        "temp_celsius": 38,
+        "condition": "Partly Cloudy / Aansik Baadal",
+        "humidity": 45,
+        "wind_kmh": 12,
+        "rain_chance": 20
+      },
+      "forecast": [
+        {"day": "Aaj (Today)", "high": 38, "low": 26, "condition": "Partly Cloudy", "rain": "20%"},
+        {"day": "Kal (Tomorrow)", "high": 36, "low": 25, "condition": "Light Rain / Halki Barish", "rain": "60%"},
+        {"day": "Parso", "high": 33, "low": 24, "condition": "Cloudy / Baadal", "rain": "40%"}
+      ],
+      "farming_advice": "Light rain expected tomorrow — delay any spray applications. Good time to prepare soil."
+    },
+    "haryana": {
+      "region": "Haryana",
+      "hindi": "Haryana",
+      "current": {
+        "temp_celsius": 40,
+        "condition": "Hot & Sunny / Garmi aur Dhoop",
+        "humidity": 35,
+        "wind_kmh": 15,
+        "rain_chance": 10
+      },
+      "forecast": [
+        {"day": "Aaj (Today)", "high": 40, "low": 28, "condition": "Sunny / Dhoop", "rain": "10%"},
+        {"day": "Kal (Tomorrow)", "high": 39, "low": 27, "condition": "Hot Winds / Loo", "rain": "5%"},
+        {"day": "Parso", "high": 37, "low": 26, "condition": "Partly Cloudy", "rain": "25%"}
+      ],
+      "farming_advice": "Very hot conditions — water crops early morning or evening. Watch for heat stress on vegetables."
+    },
+    "maharashtra": {
+      "region": "Maharashtra",
+      "hindi": "Maharashtra",
+      "current": {
+        "temp_celsius": 32,
+        "condition": "Pre-Monsoon / Pre-Barish",
+        "humidity": 70,
+        "wind_kmh": 20,
+        "rain_chance": 55
+      },
+      "forecast": [
+        {"day": "Aaj (Today)", "high": 32, "low": 24, "condition": "Humid / Umdah", "rain": "55%"},
+        {"day": "Kal (Tomorrow)", "high": 30, "low": 23, "condition": "Heavy Rain / Tez Barish", "rain": "80%"},
+        {"day": "Parso", "high": 28, "low": 22, "condition": "Rainy / Baarish", "rain": "75%"}
+      ],
+      "farming_advice": "Heavy rain tomorrow — secure young plants and ensure drainage. Avoid sowing for 2 days."
+    },
+    "uttar_pradesh": {
+      "region": "Uttar Pradesh",
+      "hindi": "Uttar Pradesh",
+      "current": {
+        "temp_celsius": 41,
+        "condition": "Extremely Hot / Bahut Tez Garmi",
+        "humidity": 30,
+        "wind_kmh": 18,
+        "rain_chance": 5
+      },
+      "forecast": [
+        {"day": "Aaj (Today)", "high": 41, "low": 29, "condition": "Loo Chalegi", "rain": "5%"},
+        {"day": "Kal (Tomorrow)", "high": 40, "low": 28, "condition": "Sunny / Dhoop", "rain": "8%"},
+        {"day": "Parso", "high": 38, "low": 27, "condition": "Partly Cloudy", "rain": "20%"}
+      ],
+      "farming_advice": "Loo conditions — protect livestock and irrigate crops at dawn. Store harvested produce in shade."
+    },
+    "rajasthan": {
+      "region": "Rajasthan",
+      "hindi": "Rajasthan",
+      "current": {
+        "temp_celsius": 44,
+        "condition": "Very Hot / Bahut Garmi",
+        "humidity": 20,
+        "wind_kmh": 25,
+        "rain_chance": 5
+      },
+      "forecast": [
+        {"day": "Aaj (Today)", "high": 44, "low": 30, "condition": "Dry Heat / Sukhi Garmi", "rain": "5%"},
+        {"day": "Kal (Tomorrow)", "high": 43, "low": 29, "condition": "Dusty Winds / Aandhi", "rain": "10%"},
+        {"day": "Parso", "high": 41, "low": 28, "condition": "Hot / Garmi", "rain": "15%"}
+      ],
+      "farming_advice": "Drought-like conditions — prioritize water conservation. Use mulching to retain soil moisture."
+    }
+  },
+  "market_prices": {
+    "last_updated": "June 2025 (Sample Data)",
+    "note": "Prices in Rs per quintal (100 kg) at major mandis",
+    "crops": [
+      {
+        "name": "Wheat / Gehu",
+        "msp": 2275,
+        "market_price": 2350,
+        "trend": "up",
+        "change": "+75",
+        "best_market": "Ludhiana, Amritsar Mandi"
+      },
+      {
+        "name": "Rice / Dhan",
+        "msp": 2183,
+        "market_price": 2100,
+        "trend": "down",
+        "change": "-83",
+        "best_market": "Karnal, Panipat Mandi"
+      },
+      {
+        "name": "Mustard / Sarson",
+        "msp": 5650,
+        "market_price": 5800,
+        "trend": "up",
+        "change": "+150",
+        "best_market": "Alwar, Bharatpur Mandi"
+      },
+      {
+        "name": "Onion / Pyaz",
+        "msp": null,
+        "market_price": 1200,
+        "trend": "down",
+        "change": "-200",
+        "best_market": "Nashik, Lasalgaon Mandi"
+      },
+      {
+        "name": "Tomato / Tamatar",
+        "msp": null,
+        "market_price": 800,
+        "trend": "up",
+        "change": "+150",
+        "best_market": "Azadpur Delhi, Pune Mandi"
+      },
+      {
+        "name": "Potato / Aloo",
+        "msp": null,
+        "market_price": 650,
+        "trend": "stable",
+        "change": "0",
+        "best_market": "Agra, Farrukhabad Mandi"
+      },
+      {
+        "name": "Chickpea / Chana",
+        "msp": 5440,
+        "market_price": 5600,
+        "trend": "up",
+        "change": "+160",
+        "best_market": "Indore, Akola Mandi"
+      },
+      {
+        "name": "Soybean",
+        "msp": 4600,
+        "market_price": 4450,
+        "trend": "down",
+        "change": "-150",
+        "best_market": "Indore, Ujjain Mandi"
+      },
+      {
+        "name": "Maize / Makka",
+        "msp": 2090,
+        "market_price": 2150,
+        "trend": "stable",
+        "change": "+60",
+        "best_market": "Gulbarga, Davangere Mandi"
+      }
+    ]
+  }
+}
