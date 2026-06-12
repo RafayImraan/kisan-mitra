@@ -20,6 +20,23 @@ st.set_page_config(
 # ─── Custom CSS ─────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
+/* Force light mode */
+[data-testid="stAppViewContainer"] {
+    background-color: #fefae0 !important;
+}
+[data-testid="stSidebar"] {
+    background-color: #d8f3dc !important;
+}
+[data-testid="stSidebar"] * {
+    color: #1a1a1a !important;
+}
+.main * {
+    color: #1a1a1a !important;
+}
+body {
+    background-color: #fefae0 !important;
+    color: #1a1a1a !important;
+}
     /* Google Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
 
