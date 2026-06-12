@@ -295,10 +295,10 @@ with st.sidebar:
     st.markdown('<p class="sidebar-title">💡 Quick Tips</p>', unsafe_allow_html=True)
     
     tips = [
-        "🌿 **Jeevamrit** — Gaay ke gobar se bana jaivik khad, fasal ke liye amrit",
-        "🐛 **Neem tel** — Keede maar dawa ka sabse accha vikalp",
-        "🌱 **Intercropping** — Ek saath kai faslein ugana, zyada kamai",
-        "💧 **Mulching** — Mitti mein naami banaye rakhta hai"
+        "🌿 <b>Jeevamrit</b> — Gaay ke gobar bana jaivik khad, fasal ke liye amrit",
+        "🐛 <b>Neem tel</b> — Keede maar dawa ka sabse accha vikalp",
+        "🌱 <b>Intercropping</b> — Ek saath kai faslein ugana, zyada kamai",
+        "💧 <b>Mulching</b> — Mitti mein naami banaye rakhta hai"
     ]
     
     for tip in tips:
