@@ -7,7 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from utils.ai_helper import get_ai_response, get_market_summary, get_weather_summary
-from utils.tts_helper import text_to_speech_base64, get_audio_html
+from utils.tts_helper import get_browser_tts_html
 
 # ─── Page Config ───────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -453,12 +453,10 @@ with col_chat:
         
         st.session_state.messages.append({"role": "assistant", "content": response})
         
-        # Generate TTS
+        # Store response text for browser TTS
         if st.session_state.tts_enabled:
-            with st.spinner("🔊 Awaaz taiyar ho rahi hai..."):
-                audio_b64 = text_to_speech_base64(response, lang="hi")
-                st.session_state.last_audio = audio_b64
-        
+            st.session_state.last_audio = response
+
         st.rerun()
     
     # ── Chat History ───────────────────────────────────────────────────────────
@@ -494,10 +492,10 @@ with col_chat:
         chat_html += '</div>'
         st.markdown(chat_html, unsafe_allow_html=True)
     
-    # Play TTS audio
+    # Play TTS via browser Web Speech API
     if st.session_state.last_audio and st.session_state.tts_enabled:
-        audio_html = get_audio_html(st.session_state.last_audio)
-        st.components.v1.html(audio_html, height=0)
+        tts_html = get_browser_tts_html(st.session_state.last_audio)
+        st.components.v1.html(tts_html, height=0)
         st.session_state.last_audio = None
 
 
