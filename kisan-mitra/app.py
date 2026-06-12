@@ -286,11 +286,12 @@ with st.sidebar:
     st.markdown('<p class="sidebar-title">⚙️ Settings</p>', unsafe_allow_html=True)
     
     # TTS toggle
-    st.session_state.tts_enabled = st.toggle(
+    tts_val = st.toggle(
         "🔊 Awaaz Enable Karein (TTS)",
-        value=st.session_state.tts_enabled,
+        value=st.session_state.get("tts_enabled", True),
         help="Bot ki awaaz sunne ke liye ON karein"
     )
+    st.session_state.tts_enabled = tts_val
     tts_speed = st.slider(
     "🔊 Awaaz Ki Speed",
     min_value=0.5,
