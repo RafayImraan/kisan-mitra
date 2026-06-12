@@ -15,7 +15,8 @@ def clean_for_tts(text: str) -> str:
     return text.strip()
 
 
-def get_browser_tts_html(text: str) -> str:
+def get_browser_tts_html(text: str, speed: float = 1.0) -> str:
+    utterance.rate = {speed};
     """
     Returns an HTML snippet that uses the browser's Web Speech API
     to speak the given text aloud. No server-side dependencies needed.

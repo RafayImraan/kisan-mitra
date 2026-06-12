@@ -291,6 +291,15 @@ with st.sidebar:
         value=st.session_state.tts_enabled,
         help="Bot ki awaaz sunne ke liye ON karein"
     )
+    tts_speed = st.slider(
+    "🔊 Awaaz Ki Speed",
+    min_value=0.5,
+    max_value=2.0,
+    value=1.0,
+    step=0.1,
+    help="1.0 = normal, 2.0 = fast, 0.5 = slow"
+)
+    st.session_state.tts_speed = tts_speed
     
     # Region selector
     st.session_state.region = st.selectbox(
@@ -510,10 +519,14 @@ with col_chat:
         st.markdown(chat_html, unsafe_allow_html=True)
     
     # Play TTS via browser Web Speech API
-    if st.session_state.last_audio and st.session_state.tts_enabled:
-        tts_html = get_browser_tts_html(st.session_state.last_audio)
+    if st.session_state.last_audio:
+      if st.session_state.get("tts_enabled", True):
+        tts_html = get_browser_tts_html(
+    st.session_state.last_audio,
+    speed=st.session_state.get("tts_speed", 1.0)
+)
         components.html(tts_html, height=0)
-        st.session_state.last_audio = None
+      st.session_state.last_audio = None
 
 
 # ─── Info Panel ─────────────────────────────────────────────────────────────────
