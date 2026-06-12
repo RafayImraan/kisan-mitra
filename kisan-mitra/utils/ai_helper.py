@@ -106,15 +106,16 @@ def get_ai_response(user_query: str, conversation_history: list = None) -> str:
     if not api_key:
         return "❌ API key nahi mila. Streamlit secrets mein GEMINI_API_KEY add karein."
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
 
     payload = {
         "system_instruction": {"parts": [{"text": system}]},
         "contents": contents,
         "generationConfig": {
-            "maxOutputTokens": 1024,
-            "temperature": 0.7
-        }
+        "maxOutputTokens": 1024,
+        "temperature": 0.7,
+        "thinkingConfig": {"thinkingBudget": 0}
+}
     }
 
     try:
