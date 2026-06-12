@@ -2,7 +2,7 @@ import streamlit as st
 import sys
 import os
 from pathlib import Path
-
+import streamlit.components.v1 as components
 # Add project root to path
 sys.path.insert(0, str(Path(__file__).parent))
 
@@ -403,7 +403,7 @@ with col_chat:
     </script>
     """
     
-    st.components.v1.html(voice_html, height=220)
+    components.html(voice_html, height=220)
     
     # ── Text Input ─────────────────────────────────────────────────────────────
     with st.form(key="chat_form", clear_on_submit=True):
@@ -495,7 +495,7 @@ with col_chat:
     # Play TTS via browser Web Speech API
     if st.session_state.last_audio and st.session_state.tts_enabled:
         tts_html = get_browser_tts_html(st.session_state.last_audio)
-        st.components.v1.html(tts_html, height=0)
+        components.html(tts_html, height=0)
         st.session_state.last_audio = None
 
 
