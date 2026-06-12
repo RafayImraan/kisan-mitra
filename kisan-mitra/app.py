@@ -431,6 +431,13 @@ with col_chat:
     """
     
     components.html(voice_html, height=220)
+    if st.button("🔇 Awaaz Band Karo", key="stop_tts"):
+     components.html("""
+                     <script>
+        window.speechSynthesis.cancel();
+    </script>
+    
+    """, height=0)
     
     # ── Text Input ─────────────────────────────────────────────────────────────
     with st.form(key="chat_form", clear_on_submit=True):
