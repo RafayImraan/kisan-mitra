@@ -16,7 +16,34 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
+st.markdown("""
+<style>
+    /* Force light mode everything */
+    html, body, [data-testid="stAppViewContainer"], 
+    [data-testid="stMain"], [data-testid="block-container"] {
+        background-color: #fefae0 !important;
+        color: #1a1a1a !important;
+    }
+    [data-testid="stSidebar"] {
+        background-color: #d8f3dc !important;
+    }
+    [data-testid="stSidebar"] * {
+        color: #1a1a1a !important;
+    }
+    [data-testid="stMarkdownContainer"] * {
+        color: #1a1a1a !important;
+    }
+    .stSelectbox label, .stToggle label, .stSlider label {
+        color: #1a1a1a !important;
+    }
+    [data-testid="stForm"] {
+        background-color: #ffffff !important;
+    }
+    p, span, div, h1, h2, h3, label {
+        color: #1a1a1a !important;
+    }
+</style>
+""", unsafe_allow_html=True)
 # ─── Custom CSS ─────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
